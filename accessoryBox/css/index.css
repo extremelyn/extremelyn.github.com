@@ -1,0 +1,1056 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 400 0.875em/1.6 'Open Sans';
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.container-1 img {
+  position: absolute;
+  top: 40px;
+  left: 10%;
+  z-index: 5;
+  width: 174px;
+}
+
+.container-4 img {
+  display: block;
+  width: 104px;
+  margin: 0 auto;
+}
+
+.container-5 img {
+  display: block;
+  width: 103px;
+  margin: 0 auto;
+}
+
+.email-capture-1 button {
+  float: left;
+  margin-left: 2.7777777778%;
+}
+
+.email-capture-1 input {
+  float: left;
+}
+
+.email-capture-2 button {
+  margin: 11px 0 0 30.3240740741%;
+}
+
+.email-capture-2 input {
+  margin: -23px 0 0 9.4907407407%;
+}
+
+button {
+  display: block;
+  width: 27.7777777778%;
+  height: 45px;
+  border-radius: 3px;
+  background-color: rgb(15, 125, 187);
+  font-size: 1.143em;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+img {
+  height: auto;
+  overflow: hidden;
+}
+
+input {
+  display: block;
+  width: 69.4444444444%;
+  height: 45px;
+  padding: 10px 15px;
+  background-color: rgba(204, 204, 204, 0.9);
+  font-size: 1.143em;
+  line-height: 1.4;
+  color: #333333;
+}
+
+.container .element {
+  position: absolute;
+  top: 0;
+  background-color: rgb(222, 222, 222);
+}
+
+.element {
+  width: 100%;
+}
+
+.email-capture {
+  position: absolute;
+  width: 36%;
+  height: 45px;
+}
+
+.container-1 {
+  position: absolute;
+  top: 0;
+  z-index: 6;
+  width: 100%;
+  padding-bottom: 550px;
+  background-image: url('../images/DeathtoStock-NateEmbry.jpg');
+  background-size: auto auto;
+}
+
+.container-2 {
+  position: relative;
+  top: 0;
+  width: 100%;
+  margin-top: 550px;
+  padding-bottom: 400px;
+}
+
+.container-3 {
+  position: absolute;
+  top: 80px;
+  left: 10%;
+  z-index: 8;
+  width: 80%;
+}
+
+.container-4 {
+  float: left;
+  width: 48.75%;
+  height: 264px;
+  padding-bottom: 18px;
+}
+
+.container-5 {
+  float: left;
+  width: 48.75%;
+  height: 264px;
+  margin-left: 2.5%;
+}
+
+.container-6 {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 550px;
+  padding-bottom: 550px;
+}
+
+.element-1 {
+  z-index: 1;
+  height: 550px;
+  background-image: url('../images/DeathtoStock-NateEmbry.jpg');
+  background-size: cover;
+}
+
+.element-2 {
+  z-index: 7;
+  height: 400px;
+  background-image: -webkit-linear-gradient(315deg, rgb(15, 125, 187) 0%, rgb(5, 33, 50) 100%);
+  background-image:    -moz-linear-gradient(315deg, rgb(15, 125, 187) 0%, rgb(5, 33, 50) 100%);
+  background-image:      -o-linear-gradient(315deg, rgb(15, 125, 187) 0%, rgb(5, 33, 50) 100%);
+  background-image:     -ms-linear-gradient(315deg, rgb(15, 125, 187) 0%, rgb(5, 33, 50) 100%);
+  background-image:         linear-gradient(135deg, rgb(15, 125, 187) 0%, rgb(5, 33, 50) 100%);
+}
+
+.element-3 {
+  z-index: 9;
+  height: 550px;
+  background-image: url('../images/DeathtoStock-Wired.jpg');
+  background-size: cover;
+}
+
+.element-4 {
+  height: 90px;
+  background-color: rgb(5, 33, 50);
+}
+
+.email-capture-1 {
+  top: 407px;
+  left: 32%;
+  z-index: 4;
+}
+
+.email-capture-2 {
+  top: 403px;
+  left: 61.4166666667%;
+  z-index: 13;
+}
+
+.text-1 {
+  position: absolute;
+  top: 378px;
+  left: 24.5%;
+  width: 52.6666666666%;
+  min-height: 27px;
+  font-size: 1.143em;
+  line-height: 1.4;
+  text-align: center;
+  color: #ffffff;
+}
+
+.text-2 {
+  position: absolute;
+  top: 168px;
+  left: 23.6666666667%;
+  z-index: 2;
+  width: 52.6666666667%;
+  padding: 20px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  background-color: rgba(40, 40, 40, 0.3);
+  font: 2.571em/1.4 Oswald;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+.text-3 {
+  position: absolute;
+  top: 368px;
+  left: 23.6666666667%;
+  z-index: 3;
+  width: 52.6666666666%;
+  min-height: 27px;
+  font-size: 1.143em;
+  line-height: 1.4;
+  text-align: center;
+  color: #ffffff;
+}
+
+.text-4 {
+  clear: both;
+  width: 100%;
+  margin-top: 54px;
+  margin-left: NaN;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.text-5 {
+  clear: both;
+  width: 100%;
+  min-height: 110px;
+  margin-top: 54px;
+  margin-left: NaN;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.text-6 {
+  position: absolute;
+  top: 79px;
+  left: 64.6666666667%;
+  z-index: 10;
+  width: 25.3333333333%;
+  min-height: 27px;
+  font: 1.5em/1.4 Oswald;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.text-7 {
+  position: absolute;
+  top: 121px;
+  left: 64.6666666667%;
+  z-index: 11;
+  width: 11.6666666667%;
+  min-height: 154px;
+  font: 9.286em/1 Oswald;
+  color: rgb(255, 255, 255);
+}
+
+.text-8 {
+  position: absolute;
+  top: 122px;
+  left: 78.25%;
+  z-index: 12;
+  width: 11.6666666667%;
+  min-height: 56px;
+  font-size: 2.571em;
+  font-weight: 300;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.text-9 {
+  position: absolute;
+  top: 334px;
+  left: 64.8333333333%;
+  z-index: 14;
+  width: 25%;
+  min-height: 26px;
+  font-size: 1.143em;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+._text-2 {
+  font: !consolidated !consolidated;
+}
+
+._text-6,
+._text-7 {
+  font: !consolidated !consolidated;
+}
+
+@media(max-width: 850px) {
+  .container-1 img {
+    z-index: 5;
+  }
+
+  .container-4 img,
+  .container-5 img {
+    margin-top: -13px;
+  }
+
+  .email-capture-1 button {
+    width: 35%;
+    margin-top: -45px;
+    margin-left: 62.8235294118%;
+  }
+
+  .email-capture-1 input {
+    width: 97.8632478632%;
+    margin-left: -28.7058823529%;
+  }
+
+  .email-capture-2 button {
+    clear: none;
+    width: 40%;
+    margin-top: -30px;
+    margin-left: 25%;
+  }
+
+  .email-capture-2 input {
+    margin-top: -86px;
+  }
+
+  img {
+    height: auto;
+  }
+
+  .container-1 {
+    z-index: 6;
+  }
+
+  .container-2 {
+    top: 0;
+    padding-bottom: 700px;
+  }
+
+  .container-3 {
+    top: 70px;
+    z-index: 8;
+  }
+
+  .container-4 {
+    width: 100%;
+    height: 286px;
+    padding-bottom: 75px;
+  }
+
+  .container-5 {
+    width: 100%;
+    margin-top: 18px;
+    margin-left: 0;
+  }
+
+  .container-6 {
+    top: 0;
+    height: 450px;
+    padding-bottom: 450px;
+  }
+
+  .element-1 {
+    z-index: 1;
+  }
+
+  .element-2 {
+    z-index: 7;
+    height: 700px;
+  }
+
+  .element-3 {
+    left: -24.2352941176%;
+    z-index: 9;
+    width: 130%;
+    height: 450px;
+  }
+
+  .element-4 {
+    height: 70px;
+    margin-top: -1px;
+  }
+
+  .email-capture-1 {
+    left: 30.2352941176%;
+    z-index: 4;
+    width: 50%;
+  }
+
+  .email-capture-2 {
+    top: 342px;
+    left: 52.1176470588%;
+    z-index: 13;
+    width: 45.2727272727%;
+    padding-bottom: 30px;
+  }
+
+  .text-2 {
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: 69.0833333333%;
+    margin: auto;
+    font-size: 2.143em;
+  }
+
+  .text-3 {
+    top: 339px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    width: 69.2307692307%;
+    margin: auto;
+  }
+
+  .text-4 {
+    width: 87.5%;
+    margin-left: 7.0588235294%;
+  }
+
+  .text-5 {
+    width: 87.5%;
+    margin-top: 64px;
+    margin-left: 7.0588235294%;
+  }
+
+  .text-6 {
+    top: 55px;
+    left: 56.8235294118%;
+    z-index: 10;
+    width: 33.0909090909%;
+    font-size: 1.143em;
+  }
+
+  .text-7 {
+    top: 97px;
+    left: 56.4705882353%;
+    z-index: 11;
+    width: 16.6153846154%;
+    font-size: 8.571em;
+  }
+
+  .text-8 {
+    top: 130px;
+    left: 73.0588235294%;
+    z-index: 12;
+    width: 16.8235294118%;
+    font-size: 2em;
+  }
+
+  .text-9 {
+    top: 264px;
+    left: 56.4705882353%;
+    z-index: 14;
+    width: 33.4545454545%;
+    font-size: 1em;
+  }
+
+}
+@media(max-width: 750px) {
+  body {
+    font-size: 0.875em;
+  }
+
+  .container-1 img {
+    z-index: 5;
+  }
+
+  .email-capture-1 button {
+    margin-top: 0;
+    margin-left: 3.3333333333%;
+  }
+
+  .email-capture-1 input {
+    width: 81.1111111111%;
+    margin-left: -21.3333333333%;
+  }
+
+  .email-capture-2 button {
+    width: 50.0669344043%;
+    margin-left: 18.5840707965%;
+  }
+
+  img {
+    height: auto;
+  }
+
+  .container-1 {
+    z-index: 6;
+  }
+
+  .container-2 {
+    top: 0;
+  }
+
+  .container-3 {
+    z-index: 8;
+  }
+
+  .container-4 {
+    padding-bottom: 91px;
+  }
+
+  .container-5 {
+    margin-top: 40px;
+  }
+
+  .container-6 {
+    top: 0;
+    height: 660px;
+    padding-bottom: 660px;
+  }
+
+  .element-1 {
+    z-index: 1;
+  }
+
+  .element-2 {
+    z-index: 7;
+  }
+
+  .element-3 {
+    z-index: 9;
+    height: 350px;
+  }
+
+  .element-4 {
+    margin-top: -223px;
+  }
+
+  .email-capture-1 {
+    left: 29.2%;
+    z-index: 4;
+    width: 60%;
+  }
+
+  .email-capture-2 {
+    top: 318px;
+    z-index: 13;
+  }
+
+  .text-2 {
+    z-index: 2;
+    width: 75%;
+    font-size: 1.929em;
+  }
+
+  .text-3 {
+    top: 366px;
+    z-index: 3;
+    width: 70%;
+  }
+
+  .text-4 {
+    display: block;
+    float: none;
+    clear: none;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .text-5 {
+    display: block;
+    float: none;
+    clear: none;
+    margin-top: 65px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .text-6 {
+    top: 49px;
+    left: 56.5333333333%;
+    z-index: 10;
+    font-size: 1em;
+  }
+
+  .text-7 {
+    top: 76px;
+    z-index: 11;
+    font-size: 7.857em;
+  }
+
+  .text-8 {
+    top: 106px;
+    left: 75.0666666667%;
+    z-index: 12;
+    width: 20%;
+    font-size: 1.714em;
+  }
+
+  .text-9 {
+    top: 259px;
+    z-index: 14;
+  }
+
+}
+@media(max-width: 650px) {
+  .container-1 img {
+    z-index: 5;
+  }
+
+  .email-capture-1 button {
+    margin-top: -45px;
+    margin-left: 62.8205128205%;
+  }
+
+  .email-capture-1 input {
+    width: 97.8632478632%;
+    margin-left: -28.7179487179%;
+  }
+
+  img {
+    height: auto;
+  }
+
+  .container-1 {
+    z-index: 6;
+  }
+
+  .container-2 {
+    top: 0;
+  }
+
+  .container-3 {
+    z-index: 8;
+  }
+
+  .container-5 {
+    padding-bottom: 35px;
+  }
+
+  .container-6 {
+    top: 0;
+    height: 350px;
+    padding-bottom: 350px;
+  }
+
+  .element-1 {
+    z-index: 1;
+  }
+
+  .element-2 {
+    z-index: 7;
+  }
+
+  .element-3 {
+    z-index: 9;
+  }
+
+  .element-4 {
+    margin-top: 99px;
+  }
+
+  .email-capture-1 {
+    z-index: 4;
+  }
+
+  .email-capture-2 {
+    z-index: 13;
+  }
+
+  .text-2 {
+    z-index: 2;
+    width: 80%;
+  }
+
+  .text-3 {
+    top: 357px;
+    z-index: 3;
+    width: 69.2307692307%;
+    font-size: 1em;
+  }
+
+  .text-5 {
+    margin-top: 27px;
+  }
+
+  .text-6 {
+    z-index: 10;
+  }
+
+  .text-7 {
+    z-index: 11;
+    font-size: 7.143em;
+  }
+
+  .text-8 {
+    top: 85px;
+    left: 77.2307692307%;
+    z-index: 12;
+    width: 12.7272727273%;
+    font-size: 1.429em;
+  }
+
+  .text-9 {
+    top: 235px;
+    z-index: 14;
+  }
+
+}
+@media(max-width: 550px) {
+  body {
+    font-size: 0.875em;
+  }
+
+  .container-1 img {
+    z-index: 5;
+  }
+
+  .email-capture-1 input {
+    width: 97.4789915966%;
+  }
+
+  img {
+    height: auto;
+  }
+
+  .container-1 {
+    z-index: 6;
+  }
+
+  .container-3 {
+    z-index: 8;
+  }
+
+  .container-4 {
+    padding-bottom: 69px;
+  }
+
+  .container-5 {
+    padding-bottom: 10px;
+  }
+
+  .container-2,
+  .container-6 {
+    top: 0;
+  }
+
+  .element-1 {
+    z-index: 1;
+  }
+
+  .element-2 {
+    z-index: 7;
+  }
+
+  .element-3 {
+    z-index: 9;
+  }
+
+  .element-4 {
+    margin-top: 0;
+  }
+
+  .email-capture-1 {
+    z-index: 4;
+  }
+
+  .email-capture-2 {
+    z-index: 13;
+  }
+
+  .text-2 {
+    z-index: 2;
+  }
+
+  .text-3 {
+    z-index: 3;
+  }
+
+  .text-5 {
+    margin-top: 52px;
+  }
+
+  .text-6 {
+    z-index: 10;
+  }
+
+  .text-7 {
+    z-index: 11;
+  }
+
+  .text-8 {
+    z-index: 12;
+    font-size: 1.143em;
+  }
+
+  .text-9 {
+    top: 184px;
+    z-index: 14;
+  }
+
+}
+@media(max-width: 475px) {
+  .container-1 img {
+    z-index: 5;
+  }
+
+  .email-capture-1 button {
+    margin-top: 0;
+    margin-left: 3.8596491228%;
+  }
+
+  .email-capture-1 input {
+    width: 88%;
+  }
+
+  img {
+    height: auto;
+  }
+
+  .container-1 {
+    z-index: 6;
+  }
+
+  .container-3 {
+    z-index: 8;
+  }
+
+  .container-2,
+  .container-6 {
+    top: 0;
+  }
+
+  .element-1 {
+    z-index: 1;
+  }
+
+  .element-2 {
+    z-index: 7;
+  }
+
+  .element-3 {
+    z-index: 9;
+  }
+
+  .email-capture-1 {
+    z-index: 4;
+  }
+
+  .email-capture-2 {
+    z-index: 13;
+  }
+
+  .text-2 {
+    z-index: 2;
+  }
+
+  .text-3 {
+    z-index: 3;
+  }
+
+  .text-5 {
+    margin-top: 65px;
+  }
+
+  .text-6 {
+    z-index: 10;
+  }
+
+  .text-7 {
+    z-index: 11;
+  }
+
+  .text-8 {
+    z-index: 12;
+  }
+
+  .text-9 {
+    z-index: 14;
+  }
+
+}
+@media(max-width: 375px) {
+  body {
+    font-size: 0.875em;
+  }
+
+  .container-1 img {
+    z-index: 5;
+  }
+
+  img {
+    height: auto;
+  }
+
+  .container-1 {
+    z-index: 6;
+  }
+
+  .container-3 {
+    z-index: 8;
+  }
+
+  .container-4 {
+    padding-bottom: 25px;
+  }
+
+  .container-2,
+  .container-6 {
+    top: 0;
+  }
+
+  .element-1 {
+    z-index: 1;
+  }
+
+  .element-2 {
+    z-index: 7;
+  }
+
+  .element-3 {
+    left: auto;
+    right: -9.6%;
+    z-index: 9;
+  }
+
+  .email-capture-1 {
+    z-index: 4;
+  }
+
+  .email-capture-2 {
+    z-index: 13;
+  }
+
+  .text-2 {
+    z-index: 2;
+    font-size: 1.571em;
+  }
+
+  .text-3 {
+    z-index: 3;
+  }
+
+  .text-5 {
+    margin-top: 27px;
+  }
+
+  .text-6 {
+    z-index: 10;
+  }
+
+  .text-7 {
+    z-index: 11;
+    font-size: 5em;
+  }
+
+  .text-8 {
+    z-index: 12;
+  }
+
+  .text-9 {
+    z-index: 14;
+    font-size: 0.857em;
+  }
+
+}
+@media(max-width: 320px) {
+  .container-1 img {
+    z-index: 5;
+  }
+
+  .email-capture-2 button {
+    margin-top: -28px;
+    margin-left: 16.6666666667%;
+  }
+
+  img {
+    height: auto;
+  }
+
+  .container-1 {
+    z-index: 6;
+  }
+
+  .container-3 {
+    z-index: 8;
+  }
+
+  .container-4 {
+    padding-bottom: 39px;
+  }
+
+  .container-5 {
+    padding-bottom: 6px;
+  }
+
+  .container-2,
+  .container-6 {
+    top: 0;
+  }
+
+  .element-1 {
+    z-index: 1;
+  }
+
+  .element-2 {
+    z-index: 7;
+  }
+
+  .element-3 {
+    right: 0;
+    z-index: 9;
+  }
+
+  .email-capture-1 {
+    z-index: 4;
+  }
+
+  .email-capture-2 {
+    z-index: 13;
+    padding-bottom: 28px;
+  }
+
+  .text-2 {
+    z-index: 2;
+  }
+
+  .text-3 {
+    z-index: 3;
+  }
+
+  .text-4,
+  .text-5 {
+    font-size: 0.929em;
+  }
+
+  .text-6 {
+    left: 56.25%;
+    z-index: 10;
+    width: 37.8125%;
+    font-size: 0.929em;
+  }
+
+  .text-7 {
+    left: 56.25%;
+    z-index: 11;
+  }
+
+  .text-8 {
+    left: 79.375%;
+    z-index: 12;
+    font-size: 1em;
+  }
+
+  .text-9 {
+    left: 56.25%;
+    z-index: 14;
+  }
+
+}

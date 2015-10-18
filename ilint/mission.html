@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Illinois International: Leading Illinois in global education, research, and engagement.</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+	<!-- The 1140px Grid - http://cssgrid.net/ -->
+	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
+	
+	<!-- Your styles -->
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+	
+	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	
+<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	var timeoutID;
+	
+	$("#main-nav li a.main-link").hover(function(){
+		window.clearTimeout(timeoutID);
+		$("#main-nav li a.main-link").removeClass("active");												 
+		$(this).addClass("active");										 
+		$("#sub-link-bar").animate({
+			height: "50px"					   
+			});
+		$(".sub-links").hide();
+		$(this).siblings(".sub-links").fadeIn();
+	},
+	function(){
+		timeoutID = window.setTimeout(function(){
+		$("#main-nav li a.main-link").removeClass("active");												 									 
+		$(".sub-links").fadeOut();
+		$("#sub-link-bar").animate({
+			height: "-10px"					   
+		});	
+		}, 3000);
+	});
+	
+	$('#main-nav li ul.sub-links').hover(function(){
+		window.clearTimeout(timeoutID);
+	}, 
+	function(){
+		timeoutID = window.setTimeout(function(){
+		$("#main-nav li a.main-link").removeClass("active");												 									 
+		$(".sub-links").fadeOut();
+		$("#sub-link-bar").animate({
+			height: "-10px"					   
+		});	
+		}, 3000);
+	});
+	
+	
+	
+	
+
+	
+	
+});
+
+</script>
+
+</head>
+
+
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="threecol logo">
+			<img src="images/IPSlogo.png" alt="Illinois International"/>
+		</div>
+		<div class="ninecol header last">
+			<img src="images/IPSletterhead.png" alt="Illinois International"/>
+			<h2>Leading The University of Illinois in global education, research, and engagement.</h2>
+		</div>
+	</div>
+</div>
+
+
+<div id="sub-link-bar"> </div>
+<!-- End sub-link-bar -->
+<div class="container">
+<div id="wrap">
+  <div id="main-handle">
+    <div class="roundfg">
+      <ul id="main-nav">
+        <li><a class="main-link" href=" ">HOME</a>
+        	<ul class="sub-links">
+            	<li><a href="index.html">Illinois International Home</a> </li>
+            </ul>
+        </li>
+        <li><a class="main-link" href=" ">ABOUT</a>
+          <ul class="sub-links">
+            <li><a href="mission.html">The Illinois International Mission</a> </li>
+            <li><a href="aboutips.html" title="The Office of International Programs & Studies">The Office of International Programs & Studies</a> </li>
+            <li><a href="apia.html" title="About Dr. Schlör">About Dr. Schlör</a> </li>
+            <li><a href="intlrankings.html" title="Illinois' International Rankings">Illinois' International Rankings</a> </li>
+            <li><a href="directory.html" title="Directory of Affiliates & Staff">Directory of Affiliates</a> </li>
+          </ul>
+        </li>
+        <li><a class="main-link" href=" ">PROGRAMS</a>
+          <ul class="sub-links">
+            <li ><a href="centersprograms.html" title="Illinois Centers and Programs">Illinois Centers and Programs</a> </li>
+            <li><a href="awards.html" title="Illinois International Awards">Illinois International Awards</a> </li>
+            <li><a href="intlweek.html" title="Illinois International Week">International Week</a> </li>
+            <li><a href="intlreview.html" title="Illinois International Review">Illinois International Review</a> </li>
+            <li><a href="illinitv.html" title="Illini TV">Illini TV</a> </li>
+            <li><a href="intltraining.html" title="International Training">International Training</a> </li>
+          </ul>
+        </li>
+        <li><a class="main-link" href=" ">PARTNERSHIPS</a>
+          <ul class="sub-links">
+            <li><a href="administrativeservices.html" title="International Centers Administrative Services">International Centers Administrative Services</a> </li>
+            <li><a href="partnerships.html" title="International Collaborations">International Partnernships</a> </li>
+            <li><a href="agreements.html" title="Establishing International Agreements">Establishing International Agreements</a> </li>
+            <li><a href="exchangeprograms.html" title="Exchange Programs">Exchange Programs</a> </li>
+            <li><a href="fulbright.html" title="Fulbright Opportunities">Fulbright Opportunities</a> </li>
+         </ul>
+        </li>
+        <li><a class="main-link" href=" ">GIVING & GRANTS</a>
+        	<ul class="sub-links">
+            <li><a href="donate.html" title="Giving Opportunities">Giving Opportunities</a> </li>
+            <li><a href="conferenceresearch.html" title="Conference & Research Grants">Conference & Research Grants</a> </li>
+            <li><a href="studyabroadgrants.html" title="Study Abroad Grants">Study Abroad Grants</a> </li>
+            <li><a href="shethgrants.html" title="Sheth International Achievement Awards">Sheth International Achievement Awards</a> </li>
+            <li><a href="shethgrants.html" title="Stewart Young Humanitarian Award">Stewart Young Humanitarian Award</a> </li>
+
+
+         	</ul>
+        </li>
+        <li><a class="main-link" href=" ">STUDENT LINKS</a>
+        	<ul class="sub-links">
+            	<li><a href="http://admissions.illinois.edu/apply/requirements_international.html" title="International Admissions">International Admissions</a></li> 
+                <li><a href="http://www.isss.illinois.edu/" title="International Student and Scholarship Services">International Student and Scholarship Services</a></li> 
+                <li><a href="http://www.isss.illinois.edu/students/finaid.shtml" title="International Financial Support">International Financial Aid</a></li> 
+                <li><a href="http://studyabroad.illinois.edu/" title="International Academic Affairs">International Academic Affairs</a></li> 
+                <li><a href="http://www.housing.illinois.edu/Housing/Future/Incoming/International%20Student%20Arrival.aspx">International Housing</a></li> 
+            </ul>
+        </li>
+         <li><a class="close" title="Click to Collapse" href="#">X</a></li>
+      </ul>
+    </div>
+  <!-- End main-handle-->
+ </div>
+</div>
+</div>
+
+
+<div class="container">
+	<div class="row littleImage1">
+		<div class="twelvecol">
+		<div class="littleBannerRight">
+		<p>Caitlin and Serena helped <br/>preserve the Pacific habitats.<br><a href="stories.html">Discover their story.</a></p>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row banner">
+		<div class="twelvecol">
+			<h3>THE ILLINOIS INTERNATIONAL MISSION</h3>	
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="fivecol para">
+			<h5>Our Mission</h5>
+			<p>The Office of International Programs and Studies was created to maintain and strengthen Illinois' role as a global leader in international research, education and engagement. This mission is accomplished by the following:</p>
+			<ul>
+			<li>Facilitating the development of vibrant linkages between Illinois and institutions around the world</li>
+			<li>Supporting scholarship on global and international issues campus-wide</li>
+			<li>Serving as the interface of the campus with international officials and dignitaries</li>
+			<li>Providing opportunities for all Illinois students to acquire global competency</li>
+			<li>Sharing international expertise with the community</li>
+			<li>Fostering a dialogue about critical international issues on our campus</li>
+			<li>Strengthening campus efforts to host the strongest international students and scholars</li>
+			<li>Gathering, managing and disseminating information about the international dimension of the campus</li>
+			<li>Initiating and implementing policies that guide and support the multifaceted and diverse international activities on campus</li>
+			</ul>
+			<br>
+			<br>			
+		</div>
+		<div class="sevencol para last">
+			<h5>About Illinois International</h5>
+			<p>The University   of Illinois at  Urbana-Champaign is a recognized leader in international education, research  and engagement. With a strong commitment to international initiatives both at  the campus level and within individual colleges, internationalization is  increasingly embedded in all aspects of the academic life on campus.</p>
+			<p>Illinois is committed to promoting and developing study abroad opportunities for its students. It has seen tremendous growth not only in the total number of students studying abroad, but also in the variety of programs and destinations and in the diversity of disciplines. According to the most recent issue of Open Doors, the annual survey of international education in the United States published by the Institute for International Education (IIE), the campus ranked 13th in the country in the number of study abroad students in 2008–2009 with 1,999 students.</p>
+			<p>Illinois supports study abroad through a central <a href="http://studyabroad.illinois.edu/">Study Abroad Office</a> as well as dedicated staff in major colleges. In a reflection of our students’ commitment to and interest in international education experiences, the student body voted in 2011 to continue a fee of $5 per semester in support study abroad scholarships. The fee generates about $250,000 per year, significantly augmenting the campus’ financial support for students learning abroad, estimated at more than $800,000 per year.</p>
+			<p>The University of Illinois at Urbana-Champaign maintains over 200 active institutional linkages with international partners representing more than 40 different countries around the world. These agreements range from student exchanges—some now entering their third decade of activity—to faculty exchange and collaborative research agreements with national research agencies, to innovative joint educational programs leading to dual or multi-institutional degrees.</p>
+			<p>The campus has one of the largest international student enrollments in the country. 7,271 international students are currently enrolled at Illinois, placing the campus first among public universities in the U.S. and second among all American institutions of higher education. The campus also ranks highly in the number of international scholars, with 1,787 in 2010-2011, placing it 13th in the country.</p>
+			<p>Illinois hosts a total of six federally funded U.S. Department of Education Title VI Centers in international and area studies, each focusing on a different world region or issue. They include National Resource Centers on East Asian and Pacific Studies; European Union Studies; Global Studies; Latin American and Caribbean Studies; Russian, East European and Eurasian Studies; as well as a Center on International Business Education and Research. Over 600 faculty from all colleges on campus are affiliated with one or more of these centers. Additional centers within the Office of International Programs & Studies include the Program on Arms Control, Disarmament and International Security; the Women and Gender in Global Perspectives Program; and the International Forum on U.S. Studies.</p>
+			<p><a href="http://library.illinois.edu">The Illinois library</a>—the largest public academic research library in the U.S.–holds well over four million volumes in support of international studies. Foremost among the collections is the Slavic and East European Library, the third largest collection in North America. The Asian Library has strong collections in Chinese, Japanese, Korean, Arabic, Hebrew, Indic, Persian, Vietnamese, and Thai. The Latin American and Caribbean collection is the nation’s fourth largest. The Library’s internationally renowned Mortenson Center for International Library Programs has a long tradition of providing librarians from around the world with continuing education.</p>
+			<p>Illinois’ international achievements have not gone unnoticed. In 2008, Illinois was recognized for its international achievements with the prestigious Senator Paul Simon Award for Campus Internationalization, awarded annually by NAFSA: Association of International Educators. Former Chancellor Richard Herman was honored for his strategic vision and international education efforts with the 2009 Michael P. Malone International Leadership Award by the Association for Public and Land Grant Universities (APLU).</p>			
+		
+			<h5>The Illinois International Web Portal</h5>
+			<p>Illinois International is comprehensive web portal to a broad range of international programs, resources and activities at Illinois.</p>
+			<p>The international dimension of Illinois has quickly become an integrated aspect of our campus. This website is intended to capture the multifaceted nature of internationalization at Illinois, and ease access to international-related information and resources across campus.</p>
+			<p>While the site is maintained by the <a href="ips.html">Office of International Programs &amp; Studies (IPS)</a>, its goal is to be as comprehensive as possible in presenting the range of international activities, assets, and linkages at Illinois. </p>
+			<p><a href="http://web.extension.uiuc.edu/iworld/main.cfm">Illinois Around the World</a> adds a new dimension to this task by consolidating a wealth of international-related data with program information and upcoming events, and making it searchable by country, unit, or activity type. Units from across campus can add information to Illinois Around the World.</p>
+			<p>If you have suggestions about links, resources, or any other information that should be included in this website, please contact <a href="mailto:ips@illinois.edu">ips@illinois.edu</a>.</p>
+			<br><br>
+		
+		</div>
+
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row footer">
+		<div class="twelvecol">
+			<h8>ILLINOIS INTERNATIONAL // IPS, 507 E. GREEN, SUITE 401, CHAMPAIGN, IL 61820 // PHONE: 217.333. 6104 // FAX: 217.265.0810 // IPS@ILLINOIS.EDU</h8>	
+		</div>
+	</div>
+</div>

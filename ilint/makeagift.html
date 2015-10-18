@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Illinois International: Leading Illinois in global education, research, and engagement.</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+	<!-- The 1140px Grid - http://cssgrid.net/ -->
+	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
+	
+	<!-- Your styles -->
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+	
+	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	
+<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#main-nav li a.main-link").hover(function(){
+		$("#main-nav li a.close").fadeIn();
+		$("#main-nav li a.main-link").removeClass("active");												 
+		$(this).addClass("active");										 
+		$("#sub-link-bar").animate({
+			height: "50px"					   
+		});
+		$(".sub-links").hide();
+		$(this).siblings(".sub-links").fadeIn();
+	});
+	$("#main-nav li a.close").click(function(){
+		$("#main-nav li a.main-link").removeClass("active");												 									 
+		$(".sub-links").fadeOut();
+		$("#sub-link-bar").animate({
+			height: "-10px"					   
+		});		
+		$("#main-nav li a.close").fadeOut();
+	});
+	
+	
+});
+
+</script>
+
+</head>
+
+
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="threecol logo">
+			<img src="images/IPSlogo.png" alt="Illinois International"/>
+		</div>
+		<div class="ninecol header last">
+			<h1>ILLINOIS INTERNATIONAL</h1>
+			<h2>Leading The University of Illinois in global education, research, and engagement.</h2>
+		</div>
+	</div>
+</div>
+
+<div id="sub-link-bar"> </div>
+<!-- End sub-link-bar -->
+<div class="container">
+<div id="wrap">
+  <div id="main-handle">
+    <div class="roundfg">
+      <ul id="main-nav">
+        <li><a class="main-link" href=" ">HOME</a>
+        	<ul class="sub-links">
+            	<li><a href="index.html">Illinois International Home</a> </li>
+            </ul>
+        </li>
+        <li><a class="main-link" href=" ">ABOUT</a>
+          <ul class="sub-links">
+            <li><a href="mission.html">The Illinois International Mission</a> </li>
+            <li><a href="aboutips.html" title="The Office of International Programs & Studies">The Office of International Programs & Studies</a> </li>
+            <li><a href="intlrankings.html" title="Illinois' International Rankings">Illinois' International Rankings</a> </li>
+            <li><a href="directory.html" title="Directory of Affiliates & Staff">Directory of Affiliates</a> </li>
+          </ul>
+        </li>
+        <li><a class="main-link" href=" ">PROGRAMS</a>
+          <ul class="sub-links">
+            <li ><a href="centersprograms.html" title="International Centers and Programs">International Centers and Programs</a> </li>
+            <li><a href="partnerships.html" title="International Partnerships">International Partnerships</a> </li>
+            <li><a href="intlreview.html" title="Illinois International Review">Illinois International Review</a> </li>
+            <li><a href="intlweek.html" title="Illinois International Week">Illinois International Week</a> </li>
+            <li><a href="intltraining.html" title="International Training">International Training</a> </li>
+          </ul>
+        </li>
+        <li><a class="main-link" href=" ">FACULTY RESOURCES</a>
+          <ul class="sub-links">
+            <li><a href="administrativeservices.html" title="International Centers Administrative Services">International Centers Administrative Services</a> </li>
+            <li><a href="conferencegrants.html" title="Conference Grants">Conference Grants</a> </li>
+            <li><a href="studyabroadgrants.html" title="Study Abroad Grants">Study Abroad Grants</a> </li>
+            <li><a href="researchgrants.html" title="Research Grants">Research Grants</a> </li>
+            <li><a href="collaborations.html" title="International Collaborations">International Collaborations</a> </li>
+          </ul>
+        </li>
+        <li><a class="main-link" href=" ">GIVING</a>
+        	<ul class="sub-links">
+            <li><a href="opportunities.html" title="Giving Opportunities">Giving Opportunities</a> </li>
+            <li><a href="makeagift.html" title="Make a Gift">Make a Gift</a> </li>
+            <li><a href="support.html" title="Support Illinois">Support Illinois</a> </li>
+         	</ul>
+        </li>
+        <li><a class="main-link" href=" ">STUDENT LINKS</a>
+        	<ul class="sub-links">
+            	<li><a href="http://admissions.illinois.edu/apply/requirements_international.html" title="International Admissions">International Admissions</a></li> 
+                <li><a href="http://www.isss.illinois.edu/" title="International Student and Scholarship Services">International Student and Scholarship Services</a></li> 
+                <li><a href="http://www.isss.illinois.edu/students/finaid.shtml" title="International Financial Support">International Financial Aid</a></li> 
+                <li><a href="http://studyabroad.illinois.edu/" title="International Academic Affairs">International Academic Affairs</a></li> 
+                <li><a href="http://www.housing.illinois.edu/Housing/Future/Incoming/International%20Student%20Arrival.aspx">International Housing</a></li> 
+            </ul>
+        </li>
+         <li><a class="close" title="Click to Collapse" href="#">X</a></li>
+      </ul>
+    </div>
+  <!-- End main-handle-->
+ </div>
+</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="twelvecol littleImage2">
+		<div class="littleBannerRight">
+		<p>Ann and Jane took learning to a new environment. <br> <a href="stories.html">Discover their story.</a></p>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row banner">
+		<div class="twelvecol">
+			<h3>GIVING OPPORTUNITIES</h3>	
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="eightcol para">
+		<h5>Help us broaden minds and expand horizons, one student at a time.</h5>
+		<p>The current generation of college students and teachers need to be culturally fluent in order to communicate with people from all over the world. According to University of Illinois Professor of Curriculum and Instruction Mark Dressman, “cultural competence” has now become an essential part of life in the 21st century. Today’s university students will inherit a workplace in which they will need to be prepared for “significant contact with the rest of the world.” Indeed, many potential employers now ask students not only if they’ve completed an internship but where their international internship experience took place as well.</p>
+		<p>Luckily, Illinois is a leader in international education. In fact, Illinois is one of a select few U.S. institutions of higher education ranking in the top 13 in the three key metrics of international education:</p>
+		<ul><li> International student enrollment;</li>
+		<li>Total number of study abroad students;</li>
+		<li>The number of federally-funded Title VI National Resource Centers for international and area studies.</li>
+		<p>Each year International Programs and Studies proudly recognizes the outstanding international achievements of our alumni, faculty and students whose professional contributions have made a significant impact on communities outside of the United States. Through their accomplishments International Achievement Award winners exemplify the strength of their education at the University of Illinois, while their dedication to the welfare of our fellow global citizens serves as an inspiration to the students, alumni, faculty, and staff of the University of Illinois at Urbana-Champaign, as well as the general public.</p>
+		<p>The Open Doors Report on International Educational Exchange, published annually by the Institute of International Education, ranks Illinois 13th in the nation’s “top 20 Doctoral/Research Institutions” for total number of study abroad students and second (first among public universities) in terms of international students studying on campus. Illinois is poised to become the nation’s pre-eminent global university. </p>
+		<p>However, we cannot attain that leadership status without your help. Your gift of any size will ensure that no Illinois student with a desire to enlarge his or her world and study, hold an internship or do research abroad is unable to do so because of lack of funds. (The average scholarship award for undergraduate study abroad students now is $1,200.)International Programs and Studies (IPS) is the campus unit that organizes engagement for the campus with the global community. IPS is committed to providing students and faculty with the services, facilities, and programs they need to expand their horizons—and ours —by investigating and experiencing this global civilization in all its multifaceted complexity.</p>
+		<p>Whether you are interested in sponsoring an international case competition, organizing campus symposia on the international intersections of technology and government policy, or providing deserving students with scholarships to study in any of 380 sites all over the world, a gift to the International Programs and Studies Annual Fund provides unrestricted support to enhance and enlarge programs with the greatest needs.</p>
+		<h6>Excellence is expensive …international excellence is priceless.</h6>
+		<h6>To discuss specific giving opportunities, please contact:</h6>
+		<h6>Rebecca Linder</h6>
+		<p>Director of Advancement, International Programs and Studies<br/>
+		507 E. Green Street, Rm 402, MC-417<br/>
+		Champaign, IL 61820<br/>
+		(217)333-5724<br/>
+		rblachly@illinois.edu</p>
+		</div>
+		<div class="fourcol para last">
+		<h5>Make a Gift</h5>
+		<h6>Interested in being a part of the University of Illinois’ global vision? </h6>
+		<p>Simply choose which fund below best describes the intent of your gift and click “Continue,” after which you will be directed to the University of Illinois Foundation’s secure giving page to complete your transaction.</p>
+		<h6>IPS Annual Fund</h6>
+		<p>Your gift supports a wide range of international activities both on-campus and around the world, from overseas faculty research and study abroad to development of new courses on vital global issues.</p>
+		<img class="donatebutton" src="images/continuebutton.png" Continue to donate to Illinois International">
+		<h6>Study Abroad Scholarships Fund</h6>
+		<p>Your gift enables Illinois students to participate in short- or long-term study abroad programs all over the world.</p>
+		<img class="donatebutton" src="images/continuebutton.png" Continue to donate to Illinois International">
+		<h6>International Student Support Fund </h6>
+		<p>Your gift provides support for Illinois’ international student population, several of whom are a long way from home.</p>
+		<img class="donatebutton" src="images/continuebutton.png" Continue to donate to Illinois International">
+		<h6>Other Ways to Give</h6>
+		<p>For other giving options (such as Electronic Funds Transfer and Payroll Deduction), to determine if your employer participates in a matching gift program, or to update existing account information, please visit the <a href="http://uif.uillinois.edu/storydetail.aspx?id=42">University of Illinois  Foundation website</a>.</p>
+		<p>(Note: When making a gift directly on the Foundation’s website, remember to indicate for which of the above three funds your gift is intended.)</p>
+
+		</div>
+
+	</div>
+</div>
+
+<div class="container">
+	<div class="row footer">
+		<div class="twelvecol">
+			<h8>ILLINOIS INTERNATIONAL // IPS, 507 E. GREEN, SUITE 401, CHAMPAIGN, IL 61820 // PHONE: 217.333. 6104 // FAX: 217.265.0810 // IPS@ILLINOIS.EDU</h8>	
+		</div>
+	</div>
+</div>

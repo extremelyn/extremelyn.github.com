@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Illinois International: Leading Illinois in global education, research, and engagement.</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+	<!-- The 1140px Grid - http://cssgrid.net/ -->
+	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
+	
+	<!-- Your styles -->
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+	
+	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	
+<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	var timeoutID;
+	
+	$("#main-nav li a.main-link").hover(function(){
+		window.clearTimeout(timeoutID);
+		$("#main-nav li a.main-link").removeClass("active");												 
+		$(this).addClass("active");										 
+		$("#sub-link-bar").animate({
+			height: "50px"					   
+			});
+		$(".sub-links").hide();
+		$(this).siblings(".sub-links").fadeIn();
+	},
+	function(){
+		timeoutID = window.setTimeout(function(){
+		$("#main-nav li a.main-link").removeClass("active");												 									 
+		$(".sub-links").fadeOut();
+		$("#sub-link-bar").animate({
+			height: "-10px"					   
+		});	
+		}, 3000);
+	});
+	
+	$('#main-nav li ul.sub-links').hover(function(){
+		window.clearTimeout(timeoutID);
+	}, 
+	function(){
+		timeoutID = window.setTimeout(function(){
+		$("#main-nav li a.main-link").removeClass("active");												 									 
+		$(".sub-links").fadeOut();
+		$("#sub-link-bar").animate({
+			height: "-10px"					   
+		});	
+		}, 3000);
+	});
+	
+	
+	
+	
+
+	
+	
+});
+
+</script>
+
+</head>
+
+
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="threecol logo">
+			<img src="images/IPSlogo.png" alt="Illinois International"/>
+		</div>
+		<div class="ninecol header last">
+			<img src="images/IPSletterhead.png" alt="Illinois International"/>
+			<h2>Leading The University of Illinois in global education, research, and engagement.</h2>
+		</div>
+	</div>
+</div>
+
+
+<div id="sub-link-bar"> </div>
+<!-- End sub-link-bar -->
+<div class="container">
+<div id="wrap">
+  <div id="main-handle">
+    <div class="roundfg">
+      <ul id="main-nav">
+        <li><a class="main-link" href=" ">HOME</a>
+        	<ul class="sub-links">
+            	<li><a href="index.html">Illinois International Home</a> </li>
+            </ul>
+        </li>
+        <li><a class="main-link" href=" ">ABOUT</a>
+          <ul class="sub-links">
+            <li><a href="mission.html">The Illinois International Mission</a> </li>
+            <li><a href="aboutips.html" title="The Office of International Programs & Studies">The Office of International Programs & Studies</a> </li>
+            <li><a href="apia.html" title="About Dr. Schlör">About Dr. Schlör</a> </li>
+            <li><a href="intlrankings.html" title="Illinois' International Rankings">Illinois' International Rankings</a> </li>
+            <li><a href="directory.html" title="Directory of Affiliates & Staff">Directory of Affiliates</a> </li>
+          </ul>
+        </li>
+        <li><a class="main-link" href=" ">PROGRAMS</a>
+          <ul class="sub-links">
+            <li ><a href="centersprograms.html" title="Illinois Centers and Programs">Illinois Centers and Programs</a> </li>
+            <li><a href="awards.html" title="Illinois International Awards">Illinois International Awards</a> </li>
+            <li><a href="intlweek.html" title="Illinois International Week">International Week</a> </li>
+            <li><a href="intlreview.html" title="Illinois International Review">Illinois International Review</a> </li>
+            <li><a href="illinitv.html" title="Illini TV">Illini TV</a> </li>
+            <li><a href="intltraining.html" title="International Training">International Training</a> </li>
+          </ul>
+        </li>
+        <li><a class="main-link" href=" ">PARTNERSHIPS</a>
+          <ul class="sub-links">
+            <li><a href="administrativeservices.html" title="International Centers Administrative Services">International Centers Administrative Services</a> </li>
+            <li><a href="partnerships.html" title="International Collaborations">International Partnernships</a> </li>
+            <li><a href="agreements.html" title="Establishing International Agreements">Establishing International Agreements</a> </li>
+            <li><a href="exchangeprograms.html" title="Exchange Programs">Exchange Programs</a> </li>
+            <li><a href="fulbright.html" title="Fulbright Opportunities">Fulbright Opportunities</a> </li>
+         </ul>
+        </li>
+        <li><a class="main-link" href=" ">GIVING & GRANTS</a>
+        	<ul class="sub-links">
+            <li><a href="donate.html" title="Giving Opportunities">Giving Opportunities</a> </li>
+            <li><a href="conferenceresearch.html" title="Conference & Research Grants">Conference & Research Grants</a> </li>
+            <li><a href="studyabroadgrants.html" title="Study Abroad Grants">Study Abroad Grants</a> </li>
+            <li><a href="shethgrants.html" title="Sheth International Achievement Awards">Sheth International Achievement Awards</a> </li>
+            <li><a href="shethgrants.html" title="Stewart Young Humanitarian Award">Stewart Young Humanitarian Award</a> </li>
+
+
+         	</ul>
+        </li>
+        <li><a class="main-link" href=" ">STUDENT LINKS</a>
+        	<ul class="sub-links">
+            	<li><a href="http://admissions.illinois.edu/apply/requirements_international.html" title="International Admissions">International Admissions</a></li> 
+                <li><a href="http://www.isss.illinois.edu/" title="International Student and Scholarship Services">International Student and Scholarship Services</a></li> 
+                <li><a href="http://www.isss.illinois.edu/students/finaid.shtml" title="International Financial Support">International Financial Aid</a></li> 
+                <li><a href="http://studyabroad.illinois.edu/" title="International Academic Affairs">International Academic Affairs</a></li> 
+                <li><a href="http://www.housing.illinois.edu/Housing/Future/Incoming/International%20Student%20Arrival.aspx">International Housing</a></li> 
+            </ul>
+        </li>
+         <li><a class="close" title="Click to Collapse" href="#">X</a></li>
+      </ul>
+    </div>
+  <!-- End main-handle-->
+ </div>
+</div>
+</div>
+
+<div class="container">
+	<div class="row littleImage4">
+		<div class="twelvecol">
+		<div class="littleBannerLeft">
+		<p>Richard studied biology — <br>this time in French. <br> <a href="stories.html">Discover his story.</a></p>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row banner">
+		<div class="twelvecol">
+			<h3>THE INTERNATIONAL PROGRAMS AND STUDIES EXECUTIVE STAFF</h3>	
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="ninecol para" id="floatit">
+			<div class="img">
+				<img src="images/tbarnes.gif" width="150" height="170" alt="Tim Barnes">
+			</div>
+			<div class="description">
+				<h5>Tim Barnes, Director, Illinois Strategic International Partnerships</h5>
+				<p>Tim Barnes joined International Programs and Studies in 1998, and has worked in the offices of Overseas Projects and Foreign Visitors (OPFV), East Asian and Pacific Exchange Programs (EAEP), and Institutional and Faculty International Collaboration (IFIC) prior to assuming his current position as director of Illinois Strategic International Partnerships (ISIP). Tim now manages all formal institutional linkages between the Urbana-Champaign campus and international partners, as well as fostering increased international engagement among faculty and serving as the campus liaison officer for the Fulbright Senior Scholar program.</p>
+			</div>
+		</div>
+		<div class="threecol para last" id="paraside">
+		<h5>Employment Opportunity</h5>
+		<h6>University of Illinois at Urbana-Champaign International Student and Scholar Services</h6>
+		<h6>International Data Management Specialist</h6>
+		<h6>12 month, 75% position</h6>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="ninecol para">
+			<div class="img">
+				<img src="images/jbbravo.jpeg" width="150" height="170" alt="Julia Bello Bravo">
+			</div>
+			<div class="description">
+				<h5>Julia Bello Bravo, Assistant Director, Illinois Strategic International Partnerships</h5>
+				<p>Dr. Julia Bello-Bravo joined International Programs and Studies in August of 2012 and serves as Assistant Director of the Illinois Strategic International Partnerships.  Previously, she worked as an Extension Specialist in the area of educational programs for Hispanic/Latino populations in the state of Illinois and for low literate learners in developing nations.  She has actively worked in the area of how to increase inclusiveness of under-represented people in educational networks and systems.  As Assistant Director, her role is to promote Illinois engagement and partnerships in Africa and Latin America.  She is also a co-founder of Scientific Animations Without BordersSM (SAWBOSM) and the Sustainable Development Virtual Knowledge Interface (SusDeViKISM) programs.</p>
+			</div>
+		</div>
+		<div class="threecol para last">
+			<h6>Primary Function:</h6>  <p>This entry-level position will assist in managing data for international students to ensure compliance with federal regulations associated with the Student and Exchange Visitor Information System (SEVIS) and to provide statistical information for the University and related off-campus entities.  The position also reconciles and reports on the unit budget. </p>  
+
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="ninecol para">
+			<div class="img">
+				<img src="images/bbillman.gif" width="150" height="170" alt="Becky Billman">
+			</div>
+			<div class="description">
+				<h5>Becky Billman, Assistant Director for Human Resources</h5>
+				<p>Becky Billman joined International Programs and Studies in 1997. As Assistant Director for Human Resources for IPS, she provides management and oversight of human resource related activities for all units reporting to the Associate Provost for International Affairs.  She serves as a member of the Senior Management Team providing guidance to the APIA on matters related to the leadership of IPS and internationalization of the campus, as well as serving as liaison for the APIA to campus and university human resource office. She also serves as Affirmative Action Officer, Intake Specialist, and Departmental Classifier. Becky earned a BA in Liberal Studies from the University of Illinois-Springfield.</p>
+			</div>
+		</div>
+		<div class="threecol para last">
+				<h6>Duties and Responsibilities:</h6>
+				<ul><li>Assist with developing and restructuring internal processes for compatibility with Banner, existing University administrative systems, and federal regulations.</li>
+<li>Provide administrative support for tracking of unit financial transactions.</li></ul>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="ninecol para">
+			<div class="img">
+				<img src="images/rblachly.jpeg" width="150" height="170" alt="Rebecca Blachly">
+			</div>
+			<div class="description">
+				<h5>Rebecca Blachly, Advancement Director</h5>
+				<p>Rebecca joined IPS in 2011. Previously, she worked for the Principal Deputy Under Secretary of Defense for Policy, as the Acting Chief of the Strategic Communication Division at U.S. Africa Command, and as a research associate in the Post-Conflict Reconstruction Project at the Center for Strategic and International Studies (CSIS). Most recently, she completed her graduate work at Harvard, where she specialized in Christian-Muslim relations and the effect of religious dynamics on the UN peacekeeping mission in Sudan. She received her BA in philosophy from Williams College. Rebecca combines significant experience and a strong track record in grant writing and external funding with a deep understanding of international scholarship and engagement.</p>
+			</div>
+		</div>
+		<div class="threecol para last">
+		<h6>Duties and Responsibilities:</h6>
+<ul><li>Assist International Data Coordinator in maintaining student and scholar database portion of fsaATLAS software program.</li>
+<li>Provide logistical assistance for the collection of new international students for data entry and SEVIS-reporting obligations. </li>
+</ul>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="ninecol para">
+			<div class="img">
+				<img src="images/bcoy.gif" width="150" height="170" alt="Brandy Coy">
+			</div>
+			<div class="description">
+				<h5>Brandy Coy, Business Manager I</h5>
+				<p>Brandy came to the University of Illinois in 2000, where she was hired as an Account Technician I at University Payables. In 2005, she transferred to Mechanical Engineering to where worked with payroll. Then in 2006, she accepted a position in the newly created International Center Administrative Services, where she provides accounting support to the international area studies centers for International Programs and Studies and the College of Liberal Arts and Sciences. In 2008, she was promoted to accountant.</p>
+			</div>
+		</div>
+		<div class="threecol para last">
+				<h6>Duties and Responsibilities:</h6><ul>
+<li>Prepare statistical reports for the unit, other University offices, and national organizations.</li>
+<li>Respond to requests for information regarding international students using FERPA guidelines.</li></ul>
+
+
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="ninecol para">
+			<div class="img">
+				<img src="images/lfranklin.gif" width="150" height="170" alt="Linda Franklin">
+			</div>
+			<div class="description">
+				<h5>Linda Franklin, Staff Clerk</h5>
+				<p>Linda started at the University of Illinois in February 2002 as a secretary in the Department of Veterinary Clinical Medicine. In April 2008, she accepted a position as Office Support Specialist with International Programs & Studies (IPS), providing support for both financial and human resource responsibilities for IPS and International Centers Administrative Services (ICAS).</p>
+			</div>
+		</div>
+		<div class="threecol para last">
+						<h6>Duties and Responsibilities:</h6><ul>
+<li>Provide back-up support for the functions of the International Data Coordinator.</li>
+<li>Monitor monthly expenditures from one state and several local accounts.</li></ul>
+
+		
+
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="ninecol para">
+			<div class="img">
+				<img src="images/aleng.gif" width="150" height="170" alt="Amy Leng">
+			</div>
+			<div class="description">
+				<h5>Amy Leng, Assistant Director, International Center Administrative Services</h5>
+				<p>Amy Leng started at the University of Illinois in 2001 in the Grants and Contracts Office handling post award accounting and compliance for NIH, USDE, EPA, and NSF grants. She joined International Programs and Studies in 2006 as the Business Manager for ICAS, supporting area studies centers for IPS and LAS. She became the Assistant Director for Finance for IPS in June 2008 and continues to work in both roles.  Her main job duties include budgeting, resource planning, accounting, compliance, and financial reporting.</p>
+			</div>
+		</div>
+		<div class="threecol para last">
+						<h6>Duties and Responsibilities:</h6><ul>
+<li>Analyze and report to the director on the status of budget expenditures on a regular basis.</li>
+<li>Serve as liaison with other campus units at the discretion of the Director.</li></ul>
+
+
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="ninecol para">
+			<div class="img">
+				<img src="images/rmalik.gif" width="150" height="170" alt="Rajeev Malik">
+			</div>
+			<div class="description">
+				<h5>Rajeev Malik, Acting Associate Director, International Programs and Studies; Director, Illinois International Training</h5>
+				<p>Rajeev Malik is the Acting Associate Director in the Offices of the Associate Provost for International Affairs and International Programs & Studies at the University of Illinois at Urbana-Champaign, as well as the director for Illinois International Training.  He has been at Illinois since 2002.  Before coming to the University of Illinois, he worked in International Business Development with Wolfram Research and Management Consulting with A.T. Kearney.  He has a B.A. in History from McGill University and an M.A. in International Relations from the University of Chicago.</p>
+			</div>
+		</div>
+		<div class="threecol para last">
+				<h6>Organizational Relationship:</h6>  <p>This position reports directly to the International Data Coordinator who reports to the Associate Director of International Student and Scholar Services who reports to the Director of International Student and Scholar Services who reports to the Associate Provost for International Affairs who reports to the Provost.</p>
+
+
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="ninecol para">
+			<div class="img">
+				<img src="images/jroberts.jpeg" width="150" height="170" alt="Jacinda Roberts">
+			</div>
+			<div class="description">
+				<h5>Jacinda Roberts, Office Support Associate</h5>
+				<p>Jacinda joined International Programs and Studies in 2012.  Her duties include scheduling meetings for the Director of Illinois Strategic International Partnerships and the Assistant Director of International Center Administrative Services; performing daily responsibilities and various tasks/assignments designated by the Director of ISIP and the Assistant Director of ICAS; providing administrative and secretarial support for the unit’s main office; processing travel reimbursements; assisting with planning departmentally sponsored conferences, seminars, workshops; and monitoring department property inventory.  Before coming to the University of Illinois, she worked in Academic Initiatives with Wolfram Research and Business Support Services with Amdocs.  She has Associates in Business Administration and is pursuing a B.A. in Business Administration at the University of Illinois-Springfield.</p>
+			</div>
+		</div>
+		<div class="threecol para last">
+				<h6>Required Qualifications:</h6>
+<ul><li>Bachelor’s Degree</li>
+<li>Basic knowledge of MS Excel, Word, Outlook, Access and Internet Explorer.</li>
+<li>Capable of working independently using discretion, handling confidential matters, and managing complex multi-task projects.</li>
+
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="ninecol para">
+			<div class="img">
+				<img src="images/brussell.gif" width="150" height="170" alt="Barbara Russell">
+			</div>
+			<div class="description">
+				<h5>Barbara Russell, Office Manager</h5>
+				<p>Barbara came to the University in 1999 and has worked with various departments across campus.  She worked in the Office of Research in the College of Agricultural, Consumer and Environmental Sciences for approximately eight years before joining the Office of the Associate Provost for International Affairs.  As Office Manager, her duties include scheduling meetings for the APIA; performing daily responsibilities and various tasks/assignments designated by the APIA; providing administrative and secretarial support for the unit’s main office; processing travel reimbursements; assisting with planning departmentally sponsored conferences, seminars, workshops; and monitoring department property inventory.</p>
+			</div>
+		</div>
+		<div class="threecol para last">
+				<h6>Required Qualifications:</h6>
+<ul><li>Ability to work effectively with individuals from varied administrative, academic, cultural, religious, national, ethnic and linguistic backgrounds.</li>
+<li>Meticulous attention to detail.</li>
+<li>Strong communication skills, both oral and written.</li></ul>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="ninecol para">
+			<div class="img">
+				<img src="images/THEWOLF.jpeg" width="150" height="170" alt="Wolfgang Schlör">
+			</div>
+			<div class="description">
+				<h5>Wolfgang Schlör, Interim Associate Provost for International Affairs; Acting Director, International Programs and Studies</h5>
+				<p>Wolfgang Schlör is the Interim Associate Provost for International Affairs and Director of International Programs and Studies at the University of Illinois at Urbana-Champaign. Schlör joined Illinois in August 2007 as Associate Director of International Programs and Studies. Previously, he served as the Interim Director of the University Center for International Studies (UCIS) at the University of Pittsburgh, as well as Associate Director and Assistant Director for Academic Affairs of UCIS.</p>
+			</div>
+		</div>
+		<div class="threecol para last">
+
+				<h6>Desired Experience:</h6>
+<ul>
+<li>Familiarity with federal immigration rules applying to F-1 and J-1 students.</li>
+<li>Knowledge of University academic and administrative policies and procedures.</li>
+<li>Experience with Banner.</li>
+<li>Interest or experience in international affairs.</li>
+</ul>
+
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="ninecol para">
+			<div class="img">
+				<img src="images/jsheets.gif" width="150" height="170" alt="Jessica Sheets">
+			</div>
+			<div class="description">
+				<h5>Jessica Sheets, Senior Coordinator of International Scholarships</h5>
+				<p>Jessica Sheets has served as Coordinator of Study Abroad Scholarships since December 2008. Before coming to the University of Illinois, Jessica pursued an M.F.A. in Creative Writing from the University of Alabama. Jessica’s responsibilities include coordinating the Illinois for Illinois (I4I) and International Programs and Studies (IPS) Study Abroad Scholarships, advising the Study Abroad Student Advisory Committee (SASAC), and providing general information about study abroad scholarship opportunities to Illinois undergraduates.</p>
+			</div>
+		</div>
+		<div class="threecol para last">
+				<h6>Salary:</h6>  <p>Commensurate with experience and qualifications.</p>
+<h6>Appointment Status:</h6>  <p>Regular, 75% appointment</p>
+<h6>Starting Date:</h6>  <p>As soon as possible after the close date.</p>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="ninecol para">
+			<div class="img">
+				<img src="images/ntami.jpeg" width="150" height="170" alt="Nicole Tami">
+			</div>
+			<div class="description">
+				<h5>Nicole Tami, Associate Director for International Engagement</h5>
+				<p>Nicole Tami joined the International Programs and Studies staff shortly after completing her doctorate degree in cultural anthropology at the University of Illinois.  As Associate Director for International Engagement Nicole works to promote and disseminate international expertise, activities and research on campus.  This includes planning and coordinating campus-wide events, such as International Education Week, to hosting and overseeing diplomatic visits by consul generals and ambassadors from around the world.  She also hosts Illinois International, a global current affairs television series, which features Illinois faculty experts and visiting scholars. </p>
+			</div>
+		</div>
+		<div class="threecol para last">
+				<h6>Application Procedures</h6>
+<p>Please create your candidate profile at http://jobs.illinois.edu  and upload your cover letter, resume and the names and contact information of three professional references by 4/19/12.  All requested information must be submitted for your application to be considered.  For questions regarding the position, contact Cheryl Hinkel at (217) 333-1303 or <a href="ips-jobs@illinois.edu">ips-jobs@illinois.edu</a>.</p>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="ninecol para">
+			<div class="img">
+				<img src="images/mvanderzalm.gif" width="150" height="170" alt="Matt VanderZalm">
+			</div>
+			<div class="description">
+				<h5>Matt VanderZalm, Communications Coordinator</h5>
+				<p>Matt VanderZalm came to International Programs and Studies in September 2007 with a strong background in journalism.  His responsibilities include serving as the managing editor of the Illinois International Review; creating and implementing project-oriented communications plans for international programs; serving as writer and editor for Global Viewpoint; serving as the editor of the Illinois International Update; facilitating media contact by creating press releases, public service announcements and news advisories; and serving as the primary liaison between IPS and the University of Illinois News Bureau.</p>
+			</div>
+		</div>
+		<div class="threecol para last">
+		<h6>About the University</h6>
+<p>The University of Illinois is an Affirmative Action /Equal Opportunity Employer. The administration, faculty and staff embrace diversity and are committed to attracting qualified candidates who also embrace and value diversity and inclusivity.</p>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row footer">
+		<div class="twelvecol">
+			<h8>ILLINOIS INTERNATIONAL // IPS, 507 E. GREEN, SUITE 401, CHAMPAIGN, IL 61820 // PHONE: 217.333. 6104 // FAX: 217.265.0810 // IPS@ILLINOIS.EDU</h8>	
+		</div>
+	</div>
+</div>

@@ -1,0 +1,62 @@
+/* CSS Resets */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%}
+
+
+/*
+
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+
+/*======BASIC THINGS=======*/
+
+body {	
+	height:100%;
+}
+
+#bgimage {
+	width:auto;
+	height:800px;
+}
+
+.header {
+	width:50%;
+	margin:0% 25% 2% 25%;
+	padding-top:2%;
+	text-align:center;
+}
+
+h1 {
+	padding:5%;
+}
+
+p {
+	line-height:1.5;
+	margin-bottom:15px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:1.1em;
+	color:#FFF;
+	text-shadow:#000 0.1em 0.1em;
+	text-align:center;
+}
+
+.sounds {
+	width:40%;
+	padding-top:2% 0% 2% 0%;
+	margin:0% 30% 0% 30%;
+	opacity:0.85;
+}
+
+.info {
+	width:42%;
+	padding:2% 4% 2% 4%;
+	opacity:0.9;
+	margin: 0% 25% 0% 25%;
+}
+
+.credit {
+	width:80%;
+	margin:0% 10% 0% 10%;
+}

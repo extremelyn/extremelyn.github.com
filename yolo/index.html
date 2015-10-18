@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>#yolowisdom</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.backstretch.min.js"></script>
+	<script type="text/javascript" language="javascript">
+ 
+		function jsonFlickrApi(rsp) {
+ 		if (rsp.stat != "ok"){
+		  return;
+		}
+ 
+ 		var s = "";
+		 var i = Math.random();
+		 i = i * 30;
+		 i = Math.ceil(i);
+ 	
+ 		photo = rsp.photos.photo[ i ];
+ 
+ 		t_url = "http://farm" + photo.farm +
+ 		".static.flickr.com/" + photo.server + "/" +
+ 		photo.id + "_" + photo.secret + "_" + "b.jpg";
+ 
+ 		p_url = "http://www.flickr.com/photos/" +
+ 		photo.owner + "/" + photo.id;
+ 
+ 		s =  '<h4>Image via flickr <a href="'+ p_url + '">' + photo.title + '</a></h4>'  ;
+ 
+ 		$("#flickr_info").html(s);
+		$("#background").backstretch([t_url], { 'positionType': 'absolute', });
+		}
+		
+	</script>
+
+
+   	<script>
+    $(document).ready(function() {
+	
+	var randomnumber=Math.floor(Math.random()*49);
+$.getJSON("https://api.twitter.com/1/statuses/user_timeline/yolowisdom.json?count=50&include_rts=1&callback=?", function(data) {
+	var str = data[randomnumber].text.toUpperCase();
+	strRep = str.replace(/RT.*\:\s/g, "").replace(/HTTP\:\/\/.*/g, "");
+     $("#tweettext2").html(strRep);
+	
+	//var tag = 'sky';
+	var style = Math.floor(Math.random()*3)
+	
+	var tag = "highway";
+	if (style == "0") {
+		tag = "machinery";
+		//add css class here
+	}
+	if (style == "1") {
+		tag = "rose";
+		$("#background").removeClass("bgstyle0").addClass("bgstyle1");
+		$("#tweettext2").removeClass("tweetstyle0").addClass("tweetstyle1");
+	}
+	if (style == "2") {
+		tag = "mountain&trail";
+		$("#background").removeClass("bgstyle0").addClass("bgstyle2");
+		$("#tweettext2").removeClass("tweetstyle0").addClass("tweetstyle2");
+	}
+
+	
+	var flickr = "http://api.flickr.com/services/rest/?format=json&sort=random&method=flickr.photos.search&tags=" + tag + "&tag_mode=all&extras=original_format&license=4&api_key=adfd4cde9cd2056dd85fd9d5235425d2&nojsoncallback=1";
+	
+	 $.getJSON(flickr, jsonFlickrApi);
+});		
+
+  
+	  });
+		
+	
+	  
+	</script>
+
+</head>
+
+<body>
+
+<div id="background" class="bgstyle0">
+<div id="tweet">
+	<div id="tweettext2" class="tweetstyle0"></div>
+    <div id="buttons">
+    <a id="button-reload" href="http://yolo.emelynbaker.com">I NEED MORE #YOLO</a>
+    </div>
+</div>
+
+
+</div>
+<div id="footer">
+<div id="credits">
+<h4>YoloWisdom is developed by <a href="http://www.emelynbaker.com/">Emelyn Baker</a> as an attempt to understand how APIs work .</h4>
+</div>
+<div id="sources">
+<div id="flickr_info">
+</div>
+<div id="twitter_info">
+<h4>Tweets via <a href="https://twitter.com/yolowisdom">yolowisdom</a></h4>
+</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>A Path of Ice and Fire</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+  <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/fastclick.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+  <script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27630991-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+  <script>
+  $(document).ready(function(){
+	new FastClick(document.body);
+	});
+</script>
+		<script type="text/javascript" src="js/processing-1.4.1.js"></script>
+		<script type="text/javascript">
+// convenience function to get the id attribute of generated sketch html element
+function getProcessingSketchId () { return 'sketch130124a'; }
+</script>
+	
+
+<script type="text/processing" data-processing-target="sketch130124a">
+  var sliderVal;
+  var nedHover = false;
+  var catHover = false;
+  var tyrionHover = false;
+  var jonHover = false;
+  var branHover = false;
+  var sansaHover = false;
+  var aryaHover = false;
+  var theonHover = false;
+  var davosHover = false;
+  var jaimeHover = false;
+  var samHover = false;
+  var brienneHover = false;
+  var cerseiHover = false;
+  $(function() {
+    $("#slider-range-max" ).slider({
+      range: "max",
+      min: 1,
+      max: 5,
+      value: 1,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( ui.value );
+		sliderVal = ui.value;
+      }
+    });
+    $( "#amount" ).val( $( "#slider-range-max" ).slider("value"));
+	$("div#flagned").hover(function() { nedHover = !nedHover; });
+	$("div#flagcat").hover(function() { catHover = !catHover; });
+	$("div#flagtyrion").hover(function() { tyrionHover = !tyrionHover; });
+	$("div#flagjon").hover(function() { jonHover = !jonHover; });
+	$("div#flagbran").hover(function() { branHover = !branHover; });
+	$("div#flagsansa").hover(function() { sansaHover = !sansaHover; });
+	$("div#flagarya").hover(function() { aryaHover = !aryaHover; });
+	$("div#flagtheon").hover(function() { theonHover = !theonHover; });
+	$("div#flagdavos").hover(function() { davosHover = !davosHover; });
+	$("div#flagjaime").hover(function() { jaimeHover = !jaimeHover; });
+	$("div#flagsam").hover(function() { samHover = !samHover; });
+	$("div#flagbrienne").hover(function() { brienneHover = !brienneHover; });
+	$("div#flagcersei").hover(function() { cerseiHover = !cerseiHover; });
+  });
+  
+  
+
+
+int amount;
+PImage mapimages = new PImage[30];
+
+void setup() {
+   size(800, 800);
+   mapimages[0] = loadImage("img/mapground.png");
+   mapimages[1] = loadImage("img/arya1.png");
+   mapimages[2] = loadImage("img/arya2.png");
+   mapimages[3] = loadImage("img/arya3.png");
+   mapimages[4] = loadImage("img/arya4.png");
+   mapimages[5] = loadImage("img/sansa1.png");
+   mapimages[6] = loadImage("img/sansa3.png");
+   mapimages[7] = loadImage("img/catelyn1.png");
+   mapimages[8] = loadImage("img/catelyn2.png");
+   mapimages[9] = loadImage("img/catelyn3.png");
+   mapimages[10] = loadImage("img/ned1.png");
+   mapimages[11] = loadImage("img/bran3.png");
+   mapimages[12] = loadImage("img/bran5.png");
+   mapimages[13] = loadImage("img/jon1.png");
+   mapimages[14] = loadImage("img/jon2.png");
+   mapimages[15] = loadImage("img/jon3.png");
+   mapimages[16] = loadImage("img/sam2.png");
+   mapimages[17] = loadImage("img/sam3.png");
+   mapimages[18] = loadImage("img/sam4.png");
+   mapimages[19] = loadImage("img/davos2.png");
+   mapimages[20] = loadImage("img/davos3.png");
+   mapimages[21] = loadImage("img/davos5.png");
+   mapimages[22] = loadImage("img/tyrion1.png");
+   mapimages[23] = loadImage("img/tyrion5.png");
+   mapimages[24] = loadImage("img/theon1.png");
+   mapimages[25] = loadImage("img/theon2.png");
+   mapimages[26] = loadImage("img/theon5.png");
+   mapimages[27] = loadImage("img/brienne2.png");
+   mapimages[28] = loadImage("img/brienne3.png");
+   mapimages[29] = loadImage("img/brienne4.png");
+   mapimages[30] = loadImage("img/jaime1.png");
+   mapimages[31] = loadImage("img/jaime3.png");
+   mapimages[32] = loadImage("img/jaime4.png");
+   mapimages[33] = loadImage("img/jaime5.png");
+   mapimages[34] = loadImage("img/locations.png");
+   mapimages[35] = loadImage("img/ned1thick.png");
+   mapimages[36] = loadImage("img/ned1thick.png");
+   mapimages[37] = loadImage("img/arya1thick.png");
+   mapimages[38] = loadImage("img/arya2thick.png");
+   mapimages[39] = loadImage("img/arya3thick.png");
+   mapimages[40] = loadImage("img/arya4thick.png");
+   mapimages[41] = loadImage("img/bran3thick.png");
+   mapimages[42] = loadImage("img/bran5thick.png");
+   mapimages[43] = loadImage("img/brienne2thick.png");
+   mapimages[44] = loadImage("img/brienne3thick.png");
+   mapimages[45] = loadImage("img/brienne4thick.png");
+   mapimages[46] = loadImage("img/catelyn1thick.png");
+   mapimages[47] = loadImage("img/catelyn2thick.png");
+   mapimages[48] = loadImage("img/catelyn3thick.png");
+   mapimages[49] = loadImage("img/davos2thick.png");
+   mapimages[50] = loadImage("img/davos3thick.png");
+   mapimages[51] = loadImage("img/davos5thick.png");
+   mapimages[52] = loadImage("img/jaime1thick.png");
+   mapimages[53] = loadImage("img/jaime3thick.png");
+   mapimages[54] = loadImage("img/jaime4thick.png");
+   mapimages[55] = loadImage("img/jaime5thick.png");
+   mapimages[56] = loadImage("img/jon1thick.png");
+   mapimages[57] = loadImage("img/jon2thick.png");
+   mapimages[58] = loadImage("img/jon3thick.png");
+   mapimages[59] = loadImage("img/sam2thick.png");
+   mapimages[60] = loadImage("img/sam3thick.png");
+   mapimages[61] = loadImage("img/sam4thick.png");
+   mapimages[62] = loadImage("img/sansa1thick.png");
+   mapimages[63] = loadImage("img/sansa3thick.png");
+   mapimages[64] = loadImage("img/theon1thick.png");
+   mapimages[65] = loadImage("img/theon2thick.png");
+   mapimages[66] = loadImage("img/theon5thick.png");
+   mapimages[67] = loadImage("img/tyrion1thick.png");
+   mapimages[68] = loadImage("img/tyrion5thick.png");
+   mapimages[69] = loadImage("img/cersei1.png");
+   mapimages[70] = loadImage("img/cersei1thick.png");
+
+}
+
+void draw() {
+  amount = sliderVal;
+  image(mapimages[0], 0, 0);
+  image(mapimages[1], 0, 0);
+  image(mapimages[5], 0, 0);
+  image(mapimages[7], 0, 0);
+  image(mapimages[10], 0, 0);
+  image(mapimages[13], 0, 0);
+  image(mapimages[22], 0, 0);
+  image(mapimages[24], 0, 0);
+  image(mapimages[30], 0, 0);
+  image(mapimages[69], 0, 0);
+
+  
+  switch(amount) {
+	case 5:
+		drawBook5();
+	case 4:
+		drawBook4();
+	case 3:
+		drawBook3();
+	case 2:
+		drawBook2();
+	default: 
+		break;  
+  }
+
+  image(mapimages[34], 0, 0);
+
+if (nedHover == true) {
+	  image(mapimages[35], 0, 0);
+  }
+if (catHover == true) {
+	  image(mapimages[46], 0, 0);
+  }
+if (tyrionHover == true) {
+	  image(mapimages[67], 0, 0);
+  }
+if (jonHover == true) {
+	  image(mapimages[56], 0, 0);
+  }
+if (sansaHover == true) {
+	  image(mapimages[62], 0, 0);
+  }
+if (aryaHover == true) {
+	  image(mapimages[37], 0, 0);
+  }
+if (theonHover == true) {
+	  image(mapimages[64], 0, 0);
+  }
+if (jaimeHover == true) {
+	  image(mapimages[52], 0, 0);
+  }
+if (cerseiHover == true) {
+	  image(mapimages[70], 0, 0);
+  }
+
+}
+
+void drawBook2() {
+  image(mapimages[2], 0, 0);
+  image(mapimages[8], 0, 0);
+  image(mapimages[14], 0, 0);
+  image(mapimages[16], 0, 0);
+  image(mapimages[19], 0, 0);
+  image(mapimages[25], 0, 0);
+  image(mapimages[27], 0, 0);
+if (aryaHover == true) {
+	  image(mapimages[38], 0, 0);
+  }
+if (samHover == true) {
+	  image(mapimages[59], 0, 0);
+  }
+if (brienneHover == true) {
+	  image(mapimages[43], 0, 0);
+  }
+if (catHover == true) {
+	  image(mapimages[47], 0, 0);
+  }
+if (davosHover == true) {
+	  image(mapimages[49], 0, 0);
+  }
+if (jonHover == true) {
+	  image(mapimages[57], 0, 0);
+  }
+if (theonHover == true) {
+	  image(mapimages[65], 0, 0);
+  }
+
+
+}
+
+void drawBook3() {
+  image(mapimages[3], 0, 0);
+  image(mapimages[6], 0, 0);
+  image(mapimages[9], 0, 0);
+  image(mapimages[11], 0, 0);
+  image(mapimages[15], 0, 0);
+  image(mapimages[17], 0, 0);
+  image(mapimages[20], 0, 0);
+  image(mapimages[28], 0, 0);
+  image(mapimages[31], 0, 0);
+if (aryaHover == true) {
+	  image(mapimages[39], 0, 0);
+  }
+if (branHover == true) {
+	  image(mapimages[41], 0, 0);
+  }
+if (brienneHover == true) {
+	  image(mapimages[44], 0, 0);
+  }
+if (catHover == true) {
+	  image(mapimages[48], 0, 0);
+  }
+if (davosHover == true) {
+	  image(mapimages[50], 0, 0);
+  }
+if (jaimeHover == true) {
+	  image(mapimages[53], 0, 0);
+  }
+if (jonHover == true) {
+	  image(mapimages[58], 0, 0);
+  }
+if (samHover == true) {
+	  image(mapimages[60], 0, 0);
+  }
+if (sansaHover == true) {
+	  image(mapimages[63], 0, 0);
+  }
+
+}
+  
+void drawBook4() {
+  image(mapimages[4], 0, 0);
+  image(mapimages[18], 0, 0);
+  image(mapimages[29], 0, 0);
+  image(mapimages[32], 0, 0);
+if (aryaHover == true) {
+	  image(mapimages[40], 0, 0);
+  }
+if (brienneHover == true) {
+	  image(mapimages[45], 0, 0);
+  }
+if (jaimeHover == true) {
+	  image(mapimages[54], 0, 0);
+  }
+if (samHover == true) {
+	  image(mapimages[61], 0, 0);
+  }
+
+
+}
+  
+void drawBook5() {
+  image(mapimages[12], 0, 0);
+  image(mapimages[21], 0, 0);
+  image(mapimages[23], 0, 0);
+  image(mapimages[26], 0, 0);
+  image(mapimages[33], 0, 0);
+if (branHover == true) {
+	  image(mapimages[42], 0, 0);
+  }
+if (davosHover == true) {
+	  image(mapimages[51], 0, 0);
+  }
+if (jaimeHover == true) {
+	  image(mapimages[55], 0, 0);
+  }
+if (theonHover == true) {
+	  image(mapimages[66], 0, 0);
+  }
+if (tyrionHover == true) {
+	  image(mapimages[68], 0, 0);
+  }
+
+}
+  
+
+
+</script>
+</head>
+
+<body>
+<div id="mapcontainer">
+	<div id="navbox">
+	<div id="header">
+    <img id="titlebanner" src="img/titlebanner.png">
+		<h2>Mapping Character Movement throughout the Seven Kingdoms</h2>
+        <hr />
+	</div>
+	<div id="sliderbox">
+		<p>
+			<label for="amount">Mapping through book</label>
+			<input type="text" id="amount" />
+		</p>
+		<div id="slider-range-max">
+    	</div>
+    </div>
+    <div id="flags">
+      <div class="row3">
+    	  <div id="flagned">
+        </div>
+        <div id="flagcat">
+        </div>
+        <div id="flagtyrion">
+        </div>
+      </div>
+      <div class="row2">
+        <div id="flagjon">
+        </div>
+        <div id="flagbran">
+        </div>
+      </div>
+      <div class="row3">
+        <div id="flagsansa">
+        </div>
+        <div id="flagarya">
+        </div>
+        <div id="flagtheon">
+        </div>
+      </div>
+      <div class="row2">
+        <div id="flagdavos">
+        </div>
+        <div id="flagjaime">
+        </div>
+      </div>
+      <div class="row3">
+        <div id="flagsam">
+        </div>
+        <div id="flagbrienne">
+        </div>
+        <div id="flagcersei">
+        </div>
+      </div>
+    </div>
+    </div>
+	<div id="map">
+			<canvas id="sketch130124a" width="800" height="800">
+				<p>Your browser does not support the canvas tag.</p>
+					<!-- Note: you can put any alternative content here. -->
+			</canvas>
+			<noscript>
+				<p>JavaScript is required to view the contents of this page.</p>
+			</noscript>
+	</div>
+</div>
+
+<div id="footer">
+<div id="thanks">
+<p>Made by <a href="http://www.emelynbaker.com">Emelyn</a> to learn the basics of processing.js. Many thanks to <a href="http://www.reddit.com/user/PrivateMajor">PrivateMajor</a> for the original map and his fantastic notes. Based off of a speculative map by <a href="http://www.sermountaingoat.co.uk/">serMountainGoat</a>. All of the wonder of Westeros and more belongs to <a href="http://georgerrmartin.com/">George R.R. Martin</a>.
+</div>
+</div>
+
+</body>
+</html>
